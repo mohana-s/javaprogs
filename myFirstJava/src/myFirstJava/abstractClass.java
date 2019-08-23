@@ -26,8 +26,8 @@ class grapes extends fruits{
 		return 100;
 	}
 }
-public class myJavaFamily {
-	myJavaFamily(){
+public class abstractClass {
+	abstractClass(){
 		System.out.println("Constructor in Main");
 	}
 	void getTaste()
@@ -37,7 +37,7 @@ public class myJavaFamily {
 	public static void main(String args[]) {
 		//fruits f=new fruits();  ****abstract class cannot be intantiated****
 		fruits f=new grapes();
-		myJavaFamily m=new myJavaFamily(); // Constractor in Main (myJavaFamily) 
+		abstractClass m=new abstractClass(); // Constractor in Main (myJavaFamily) 
 		System.out.println("Name of the fruit is : "+f.getName());//abstract method
 		System.out.println("Color of the fruit is : "+f.getColor());//non abstract method
 		System.out.println("Price of the fruit is : "+f.getPrice());	
